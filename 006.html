@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // document.write("10" + "10");
+      // document.write(10 + 10);
+
+      document.write(`typeof(5): ${typeof 5} <br>`); //number
+      document.write(`typeof(5.5)): ${typeof 5.5} <br>`); //소수점
+      document.write(`typeof(5): ${typeof "5"} <br>`); //string
+      document.write(`typeof(gildong): ${typeof "gildong"} <br>`); //string
+      document.write(`typeof(x): ${typeof x} <br>`); //변수 선언 없었음
+      document.write(`typeof(undefined): ${typeof undefined} <br>`);
+      document.write(`typeof([1, 2, 3, 4]): ${typeof [1, 2, 3, 4]} <br>`); //array
+      document.write(
+        `typeof({'one':'하나', 'two':'둘'}): ${typeof {
+          one: "하나",
+          two: "둘",
+        }} <br>`
+      ); //object
+      function js() {}
+      document.write(`typeof(js): ${typeof js} <br>`); //function
+      document.write(`typeof(js / 2): ${typeof (js / 2)} <br>`); //number
+      document.write(js / 2, "<br>"); //NaN(not a number)
+      document.write(`typeof('js' / 2): ${typeof ("js" / 2)} <br>`); //number
+      document.write(`typeof('1' + 1): ${typeof ("1" + 1)} <br>`); //string
+      document.write("1" + 1, "<br>"); //11
+      document.write(`typeof('gildong' / 3): ${typeof ("gildong" / 3)} <br>`); //number
+      document.write(`typeof(true): ${typeof true} <br>`); //boolean
+
+      let test = null;
+      document.write(typeof test, "<br>"); //object
+    </script>
+  </body>
+</html>
