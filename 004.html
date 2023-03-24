@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var x, y;
+      x = 10;
+      y = 20;
+      z = "10";
+
+      document.write(x > y, "<br>"); //false
+      document.write(x < y, "<br>"); //true
+      document.write(x >= y, "<br>"); //false
+      document.write(x <= y, "<br>"); //true
+
+      document.write(`x == z :${x == z} <br>`); //true
+      document.write(`x === z :${x === z} <br>`); //false (type까지 고려)
+      document.write(`x != y :${x != y} <br>`); //true : 10과 20은 다른가?
+      document.write(`x != 10 :${x != 10} <br>`); //false : 10과 10은 다른가?
+    </script>
+  </body>
+</html>
