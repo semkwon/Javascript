@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 논리연산
+      // and, or, not (자주 사용되는 연산)
+      // and = 곱
+      // or = 합
+      // true = 1
+      // false = 0
+
+      document.write(`true || true : ${true || true} <br>`); //true
+      document.write(`true || false : ${true || false} <br>`); //true
+      document.write(`false || true : ${false || true} <br>`); //true
+      document.write(`false || false : ${false || false} <br>`); //false
+
+      document.write(`true && true : ${true && true} <br>`); //true
+      document.write(`true && false : ${true && false} <br>`); //false
+      document.write(`false && true : ${false && true} <br>`); //false
+      document.write(`false && false : ${false && false} <br>`); //false
+
+      document.write(`!true : ${!true} <br>`); //false
+      document.write(`!false : ${!false} <br>`); //true
+
+      let x = 12;
+      document.write(
+        `x % 3 == 0 && x % 5 == 0 : ${x % 3 == 0 && x % 5 == 0} <br>`
+      ); // true && false = false
+
+      x = 15;
+      document.write(
+        `x % 3 == 0 && x % 5 == 0 : ${x % 3 == 0 && x % 5 == 0} <br>`
+      ); // true && true = true
+
+      x = 12;
+      document.write(
+        `x % 3 == 0 || x % 5 == 0 : ${x % 3 == 0 || x % 5 == 0} <br>`
+      ); // true || false = true
+
+      x = 13;
+      document.write(
+        `x % 3 == 0 || x % 5 == 0 : ${x % 3 == 0 || x % 5 == 0} <br>`
+      ); // false || false = false
+    </script>
+  </body>
+</html>
