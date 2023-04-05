@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const computers = ["H", "He", "Li"];
+
+      // 1번
+      console.log(computers.map((element) => element.length));
+
+      // 2번
+      function findLength(word) {
+        return word.length;
+      }
+      console.log(findLength("hello"));
+      console.log(findLength(computers.map));
+      console.log(computers.map(findLength));
+      //순서가 이해 안간다. map안에 findLength를 넣으면 input값이 뭐가 되는거지?
+    </script>
+  </body>
+</html>

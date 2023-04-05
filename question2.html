@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let users = [
+        { firstName: "Susan", lastName: "Steward" },
+        { firstName: "Daniel", lastName: "Longbottom" },
+        { firstName: "Jacob", lastName: "Black" },
+      ];
+
+      let userNameInFull = users.map(function (element) {
+        return `${element.firstName} ${element.lastName}`;
+      });
+
+      console.log(userNameInFull);
+
+      // 저기 저 element 넣는게 이해가 안간다.
+      // function인데 함수 이름이 없는건 괜찮은건가??
+    </script>
+  </body>
+</html>
