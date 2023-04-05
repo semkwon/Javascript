@@ -10,7 +10,12 @@
     <script>
       let 과일 = ["사과", "수박", "복숭아", "딸기", "바나나"];
 
-      document.write(`${과일.pop()}`);
+      document.write(`과일3 : ${과일} <br>`);
+      let 꺼낸과일 = 과일.shift();
+      과일.push(꺼낸과일);
+      document.write(`과일3 : ${과일} <br>`);
+
+      document.write(`과일 : ${과일.join("!!")} <br>`);
     </script>
   </body>
 </html>
