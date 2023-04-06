@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //String
+      let txt = "ABCDEFGHIJK";
+      let txt_two = "mon said 'hello world'";
+
+      document.write(`txt : ${txt} <br>`);
+      document.write(`txt.length : ${txt.length} <br>`);
+      document.write(`txt[1] : ${txt[1]} <br>`);
+      document.write(`txt[1] : ${txt_two} <br>`);
+
+      document.write(`txt.indexOf : ${txt.indexOf("F")} <br>`);
+      document.write(`txt.search : ${txt.search("F")} <br>`);
+      document.write(`txt.lastIndexOf : ${txt.lastIndexOf("F")} <br>`);
+      document.write(`txt.slice(0,3) : ${txt.slice(0, 3)} <br>`);
+      document.write(`txt.substring(0,3) : ${txt.substring(0, 3)} <br>`);
+      document.write(`txt.substr(2,5) : ${txt.substr(2, 5)} <br>`);
+      document.write(
+        `txt.replace('ABC', 'gildong') : ${txt.replace("ABC", "gildong")} <br>`
+      );
+      document.write(`txt.toUpperCase() : ${txt.toUpperCase()} <br>`);
+      document.write(`txt.toLowerCase() : ${txt.toLowerCase()} <br>`);
+
+      // document.write(
+      //   `txt.replace('ABC', 'gildong') : ${txt.replace(/ABC/g, "gildong")} <br>`
+      // );
+    </script>
+  </body>
+</html>
