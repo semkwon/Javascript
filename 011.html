@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Number
+      let number = 1e9; // 1,000,000,000 // 1e1 = 10
+      let number2 = 123e-5; // 0.001 // 1e-1 = 0.1
+      let number3 = 1.23e9;
+      let number4 = 0b1010; // 0, 1 -> 10 / binary
+      let number5 = 0o12; // 0~7 -> 10 / octa
+      let number6 = 0xff; // 0~f -> 255 / hexa
+      let number7 = parseInt("13", 10); // parseInt("숫자", 진법)
+      let number8 = parseFloat("13.33", 10); // parseInt("숫자", 진법)
+
+      document.write(number, "<br>");
+      document.write(number2, "<br>");
+      document.write(number3, "<br>");
+      document.write(number4, "<br>");
+      document.write(number4 === number5, "<br>"); // 0b1010와 0o12이 같나? true
+      document.write(number5, "<br>");
+      document.write(number6, "<br>");
+      document.write(number7, "<br>");
+      document.write(number8, "<br>");
+      document.write(0.1 + 0.2 == 0.3, "<br>"); //false  //대표적 오류
+    </script>
+  </body>
+</html>
