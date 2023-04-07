@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Number 관련 함수
+      let n = 100000000;
+      let nFloat = 10000.123123123;
+      let s = "100,000,000";
+
+      document.write(`n :${n} <br>`);
+      document.write(`n.toLocaleString() :${n.toLocaleString()} <br>`);
+      document.write(`s :${s} <br>`);
+      document.write(`s.replace(/,/g, "") :${s.replace(/,/g, "")} <br>`);
+      document.write(`parseInt(s, 10) :${parseInt(s, 10)} <br>`);
+
+      document.write(`n.toFixed(10) :${n.toFixed(10)} <br>`);
+      document.write(`nFloat.toFixed(3) :${nFloat.toFixed(3)} <br>`);
+      document.write(
+        `nFloat.toExponential(4) :${nFloat.toExponential(4)} <br>`
+      );
+
+      document.write(parseInt(Math.random() * 10));
+    </script>
+  </body>
+</html>
