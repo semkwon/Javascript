@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //제어문 - 삼항 연산자
+      let x = 3;
+      // let y = 7;
+
+      // if (x == y) {
+      //   document.write("if문으로 실행되었습니다.");
+      // } else {
+      //   document.write("else문으로 실행되었습니다.");
+      // }
+
+      // x == 3
+      //   ? document.write("if문으로 실행되었습니다.")
+      //   : document.write("else문으로 실행되었습니다.");
+
+      let result = x == 3 ? true : false; // result = true
+
+      // let score = 69;
+      // let money = 1000;
+      // if (score > 90) {
+      //   document.write("Awesome!! <br>");
+      //   money += 100000;
+      // } else if (score > 80) {
+      //   document.write("Great!! <br>");
+      //   money += 10000;
+      // } else if (score > 70) {
+      //   document.write("Good!! <br>");
+      //   money += 1000;
+      // } else {
+      //   document.write("Study hard!! <br>");
+      //   money += 500;
+      // }
+
+      let score = 60;
+
+      let money = 500;
+
+      score > 90
+        ? (money += 100000)
+        : score > 80
+        ? (money += 10000)
+        : score > 70
+        ? (money += 1000)
+        : (money = 0);
+
+      document.write(money, "<br>");
+    </script>
+  </body>
+</html>
