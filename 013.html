@@ -18,7 +18,27 @@
       for (i = 0; i < 101; i += 2) {
         s += i;
       }
-      document.write(s);
+      document.write(s, "<br>");
+
+      // 구구단
+      // 1 * 1, 1 * 2 ...
+
+      for (i = 2; i < 10; i++) {
+        for (j = 1; j < 10; j++) {
+          console.log(`${i} X ${j} = ${i * j}`);
+        }
+      }
+
+      // 3의 배수와 5의 배수의 합
+      // 3의 배수이거나 5의 배수인 것들의 합
+
+      let a = 0;
+      for (i = 0; i < 101; i++) {
+        if (i % 3 == 0 || i % 5 == 0) {
+          a += i;
+        }
+      }
+      console.log(a);
     </script>
   </body>
 </html>
