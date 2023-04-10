@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // str의 평균값 '5,4,10,2,5'
+
+      let str = prompt();
+      let splitS = str.split(",");
+      console.log(splitS);
+
+      let s = 0;
+      for (var numbers of splitS) {
+        s += parseInt(numbers, 10);
+      }
+      console.log(s);
+      console.log(splitS.length);
+      console.log(s / splitS.length);
+
+      console.log(parseInt(s / splitS.length));
+    </script>
+  </body>
+</html>
