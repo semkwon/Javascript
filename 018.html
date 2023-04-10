@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // map -> m.set, m.get, m.has, m.delete
+
+      let m = new Map();
+
+      m.set("하나", "1");
+      m.set("1", "하나");
+      m.set(true, 1);
+      m.set(false, 0);
+
+      console.log(m.get("하나"));
+      console.log(m.get("1"));
+      console.log(m.get(true));
+      console.log(m.get(false));
+      console.log(m.has(false));
+      console.log(m.delete(false));
+      console.log(m.has(false));
+      console.log(m);
+      console.log(m.size);
+
+      for (var variable of m) {
+        console.log(`m1을 순회하고 있습니다. ${variable}`);
+        console.log(`m2을 순회하고 있습니다. ${variable[0]}`);
+        console.log(`m3을 순회하고 있습니다. ${variable[1]}`);
+      }
+
+      console.log(m.keys());
+      console.log(m.values());
+      console.log(m.entries());
+
+      let temp = new Map([
+        [1, 10],
+        [2, 20],
+        [3, 30],
+        [4, 40],
+      ]);
+      console.log(temp);
+    </script>
+  </body>
+</html>
